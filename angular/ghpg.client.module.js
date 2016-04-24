@@ -5,13 +5,13 @@
 	var dependencies = ['$http']; 	
 
 	angular.module('ghpg', dependencies)
-	.run(initalize)
+	.run(init)
 	.config(Config);  
 	
-	initialize.$inject = [ '$http' ];
+	init.$inject = [ '$http' ];
 
 
-	function initalize($rootScope, $location){
+	function init($rootScope, $location){
 		
 		var vm  = this; 		
 

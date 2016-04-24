@@ -14,7 +14,7 @@
 
 		var factory = {
 
-			getContent : getContent; 
+			getContent : getContent 
 
 
 		};
