@@ -6,8 +6,10 @@
 
 	angular.module('gitBlogController').controller('gitBlogController', gitBlogController); 
 
+	
+	gitBlogController.$inject = ['blogController'];  
 
-	function gitBlogController(){
+	function gitBlogController(blogController){
 
 
 	} 

@@ -2,22 +2,26 @@
 
 	'use strict'; 
 	
-	var dependencies = []; 	
+	var dependencies = ['$http']; 	
 
-	angular.module('github-blog', dependencies)
-	.intialize(run)
-	.config(Config); 
+	angular.module('ghpg', dependencies)
+	.run(initalize)
+	.config(Config);  
+	
+	initialize.$inject = [ '$http' ];
 
 
-	function run(){
-
+	function initalize($rootScope, $location){
+		
+		var vm  = this; 		
 
 	} 
-	
+
 	function Config(){
 
+		
+
 
 	} 
-	//bootstrap angular
 
 })();
