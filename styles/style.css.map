@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,OAAO;EAEN,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,KAAK",
+"mappings": "AAAA,SAAS;EAER,KAAK,EAAC,KAAK;;AAIZ,OAAO;EAEN,UAAU,EAAE,IAAI",
 "sources": ["../sass/_nav.scss"],
 "names": [],
 "file": "style.css"
