@@ -6,11 +6,9 @@
 	.factory('blogContent',blogContent);
 	
 
-	blogContent.$inject = []; 
+	blogContent.$inject = [ '$http' ]; 
 
-	function blogContent(){
-
-		var data; 
+	function blogContent($http){
 
 		var factory = {
 
@@ -24,14 +22,21 @@
 
 		////
 
-		function getContent(){
+		function getContent($http){
+			return 	$http.get("/content.json")
+				.then(contentSuccess)
+				.catch(contentFail); 
+		  
 
-		}  
+		function contentSuccess(response){
+			return response.data.results;
+		} 
+		function contentFail(error){
+			console.log(error.data); 
 
-		
-
+		} 
 	
-
+	    }
 	}  
 
 })(); 
