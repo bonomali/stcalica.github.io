@@ -6,8 +6,6 @@
 
 	angular.module('ghpg', dependencies)
 	.run(init)
-	.config(Config);  
-	
 	init.$inject = [ '$http' ];
 
 
@@ -17,11 +15,9 @@
 
 	} 
 
-	function Config(){
 
 		
 
 
-	} 
 
 })();
