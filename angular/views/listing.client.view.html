@@ -1,6 +1,6 @@
 <div class="container-fluid" ngController="blogController as g"> 
 	<h2> Articles </h2> 	
-	<div class="post-listing" data-ng-repeat="vm.data">
+	<div class="post-listing" data-ng-repeat=" post in vm.data">
 		<p> {{ vm.data  }} </p> 
 	</div>  
 
