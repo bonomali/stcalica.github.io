@@ -11,7 +11,7 @@
 
 		$routeProvider
 			.when('/blog', {
-				templateUrl: '/views/listings.client.views.html'
+				templateUrl: '/angular/views/listings.client.views.html'
 			}).otherwise({
 				redirectTo:'/'
 			});
