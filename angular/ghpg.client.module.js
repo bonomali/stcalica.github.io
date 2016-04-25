@@ -2,7 +2,7 @@
 
 	'use strict'; 
 	
-	var dependencies = []; 	
+	var dependencies = [ 'ngRoute' ]; 	
 
 	angular.module('ghpg', dependencies)
 	.run(init)
