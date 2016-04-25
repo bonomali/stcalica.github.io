@@ -14,7 +14,7 @@
 		var vm = this; 
 
 		vm.data = dataservice.getContent(); 
-	
+		console.log(vm.data); 	
 	} 
 
 
