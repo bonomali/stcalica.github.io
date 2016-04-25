@@ -2,11 +2,11 @@
 
 	'use strict'; 
 	
-	var dependencies = ['$http']; 	
+	var dependencies = []; 	
 
 	angular.module('ghpg', dependencies)
 	.run(init)
-	init.$inject = [ '$http' ];
+	init.$inject = [  ];
 
 
 	function init($rootScope, $location){

@@ -2,7 +2,11 @@
 
 	'use strict'; 
 	
-	var dependencies = ['ghpg', 'ngRoute']; 	
+	var dependencies = [
+		'ghpg', 
+		'ngRoute'
+
+	]; 	
 
 	angular.module('blogger', dependencies)
 	.config(Config);  
