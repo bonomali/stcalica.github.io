@@ -29,7 +29,7 @@
 		  
 
 		function contentSuccess(response){
-			return response.data.results;
+			return response.data;
 		} 
 		function contentFail(error){
 			console.log(error.data); 
