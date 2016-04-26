@@ -4,7 +4,7 @@
 
 	angular.module('ghpg').controller('blogController', blogController); 
 	
-	gitBlogController.$inject = ['blogController', 'blogContent'];  
+	blogController.$inject = ['blogController', 'blogContent'];  
 
 	////
 
