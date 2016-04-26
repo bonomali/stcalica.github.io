@@ -2,22 +2,33 @@
 
 	'use strict'; 
 
-	angular.module('ghpg').controller('blogController', blogController); 
+	angular
+	.module('ghpg')
+	.controller('blogController', blogController); 
 	
-	blogController.$inject = ['blogController', 'blogContent'];  
+	blogController.$inject = ['$scope', 'blogContent'];//,'blogContent'] //, 'blogContent'];  
+	 
 
 	////
+	
+	function blogController($scope,  blogContent){
+		var vm = this;
+		vm.articles = [];
+		grabData();   
 
-	function blogController(blogController, blogContent){
-		console.log('running controller');			
-		var vm = this; 
+		function grabData(){
+			return blogContent.getContent().then(function(data){
+					console.log(data.articles);
+					vm.articles = data.articles;
+					return vm.articles; 
+					},function(err){ 
+				console.log(err); 
+				vm.data = [];
 
-		vm.data = blogContent.getContent();
-		$scope.data = vm.data; 
-		console.log(vm.data); 	
-	} 
+				}); 
+		} 
 
-
+	}
 
 
 })(); 

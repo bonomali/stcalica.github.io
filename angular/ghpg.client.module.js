@@ -6,7 +6,7 @@
 
 	angular.module('ghpg', dependencies)
 	.run(init)
-	init.$inject = [ '$rootScope','$location' ];
+	init.$inject = ['$rootScope','$location' ];
 
 
 	function init($rootScope, $location){

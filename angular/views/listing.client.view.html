@@ -1,7 +1,8 @@
-<div class="container-fluid" data-ngController="blogController as vm"> 
+<div class="container-fluid" data-ng-Controller="blogController as vm"> 
 	<h2> Articles </h2> 	
-	<div class="post-listing" data-ng-repeat=" post in $scope.data">
-		<p> {{ post  }} </p> 
+	<div class="post-listing" data-ng-repeat="post in vm.articles">
+		<h3> {{ post.title  }} </h3>
+		<span> {{ post.content }} </span> 
 	</div>  
 
 </div> 

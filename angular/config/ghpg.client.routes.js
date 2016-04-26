@@ -10,7 +10,7 @@
 	function Config($routeProvider){
 
 		$routeProvider
-			.when('/blog', {
+			.when('/listing', {
 				templateUrl: '/angular/views/listing.client.view.html'
 			}).otherwise({
 				redirectTo:'/'

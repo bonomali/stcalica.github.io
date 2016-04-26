@@ -9,7 +9,9 @@
 	blogContent.$inject = [ '$http' ]; 
 
 	function blogContent($http){
-
+		
+		var content; 
+		
 		var factory = {
 
 			getContent : getContent 
@@ -21,22 +23,18 @@
 
 
 		////
+				
+		function getContent() {
+			return $http.get('/content.json').then(function(res){
 
-		function getContent($http){
-			return 	$http.get("/content.json")
-				.then(contentSuccess)
-				.catch(contentFail); 
-		  
-
-		function contentSuccess(response){
-			return response.data;
-		} 
-		function contentFail(error){
-			console.log(error.data); 
-
-		} 
+				content = res.data;
+				console.log(content); 
+				return content;
+			}).catch(function(err){
+				console.log(err);	
+			});
 	
-	    }
+		}
 	}  
 
 })(); 
