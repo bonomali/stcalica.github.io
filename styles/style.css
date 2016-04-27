@@ -10,4 +10,21 @@ nav {
 .navbar {
   background: blue; }
 
+.post-listing {
+  margin: 35px;
+  padding: 15px; }
+
+.article-content {
+  text-align: justified;
+  height: 500em;
+  overflow: ellipsis; }
+
+.article-title {
+  text-align: center; }
+
+.article-date {
+  text-align: center;
+  font-size: .95em;
+  font-style: italic; }
+
 /*# sourceMappingURL=style.css.map */

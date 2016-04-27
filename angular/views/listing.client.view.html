@@ -1,8 +1,16 @@
 <div class="container-fluid" data-ng-Controller="blogController as vm"> 
-	<h2> Articles </h2> 	
-	<div class="post-listing" data-ng-repeat="post in vm.articles">
-		<h3> {{ post.title  }} </h3>
-		<span> {{ post.content }} </span> 
+	<h2> Listings </h2> 	
+	<div class="col-md-12">
+		<div class="col-md-4"></div>
+		<div class="col-md-8"> 		
+			<div class="post-listing" data-ng-repeat="post in vm.articles">
+				<h3 class="article-title"> {{ post.title  }} </h3>
+				<div class="article-container">
+					<div class="article-date"><span class="article-date">{{ post.date }}</span></div>
+					<div class="article-post>"><span class="article-content"> {{ post.content }} </span></div> 
+				</div> 
+			</div>
+		</div>  
 	</div>  
 
 </div> 
