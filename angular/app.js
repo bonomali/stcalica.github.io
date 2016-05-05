@@ -17,8 +17,6 @@
 
 		$locationProvider.hashPrefix('!'); 
 
-
-
 	} 
 
 	if (window.location.hash === '#_=_'){

@@ -14,6 +14,12 @@
 				templateUrl: '/angular/views/listing.client.view.html'
 			}).otherwise({
 				redirectTo:'/'
+			}).when('/post/:title',{
+				templateUrl: '/angular/views/post.client.view.html',
+				controller: 'postController',
+				controllerAs: 'post'
+			}).otherwise({
+				redirectTo:'/listing'
 			});
 
 	}  
