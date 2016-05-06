@@ -10,6 +10,26 @@ nav {
 .navbar {
   background: blue; }
 
+/* For all the scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-image: -webkit-linear-gradient(#F5F5F5, #8A8A8A); }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid black;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-button {
+  background-color: #7c2929; }
+
+::-webkit-scrollbar-corner {
+  background-color: #b3b3b3; }
+
 .post-listing {
   margin: 35px;
   padding: 15px; }
