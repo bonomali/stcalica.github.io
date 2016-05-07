@@ -1,6 +1,6 @@
 @font-face {
   font-family: 28dayslater;
-  src: url(/styles/fonts/28_days_later.ttf); }
+  src: url(/styles/fonts/28DaysLater.ttf); }
 @font-face {
   font-family: myway;
   src: url(/styles/fonts/IDidItMyWay.ttf); }
@@ -42,6 +42,23 @@ nav {
 
 ::-webkit-scrollbar-corner {
   background-color: #b3b3b3; }
+
+.pro-pic {
+  width: 200px;
+  border-radius: 100px;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.site-header {
+  font-family: 28dayslater;
+  margin-bottom: 2em; }
+
+.site-snip {
+  margin-top: 3em;
+  font-family: trashbox;
+  text-align: center; }
 
 .post-listing {
   margin: 35px;

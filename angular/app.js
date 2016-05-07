@@ -29,7 +29,7 @@
 
 	angular.element(document).ready(function(){
 
-		angular.bootstrap(document, ['blogger']); 
+		angular.bootstrap(document, ['blogger']);
 
 	});
 
