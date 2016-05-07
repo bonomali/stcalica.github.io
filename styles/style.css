@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 28dayslater;
-  src: url(/styles/fonts/28DaysLater.ttf); }
+  font-family: oj;
+  src: url(/styles/fonts/oj.otf); }
 @font-face {
   font-family: myway;
   src: url(/styles/fonts/IDidItMyWay.ttf); }
@@ -60,6 +60,13 @@ nav {
   font-family: trashbox;
   text-align: center; }
 
+.post-title {
+  font-family: oj;
+  text-align: center; }
+
+.post-content {
+  text-align: justify; }
+
 .post-listing {
   margin: 35px;
   padding: 15px; }
@@ -70,9 +77,11 @@ nav {
   overflow: ellipsis; }
 
 .article-title {
+  font-family: trashbox;
   text-align: center; }
 
 .article-date {
+  font-family: myway;
   text-align: center;
   font-size: .95em;
   font-style: italic; }
