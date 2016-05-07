@@ -1,10 +1,23 @@
+@font-face {
+  font-family: 28dayslater;
+  src: url(/styles/fonts/28_days_later.ttf); }
+@font-face {
+  font-family: myway;
+  src: url(/styles/fonts/IDidItMyWay.ttf); }
+@font-face {
+  font-family: trashbox;
+  src: url(/styles/fonts/Trashbox.ttf); }
 nav {
   margin-bottom: 55px; }
 
-.navbar-brand img {
-  color: white; }
+.navbar-brand {
+  font-family: myway; }
+  .navbar-brand img {
+    color: white; }
 
 .nav-link {
+  font-family: trashbox;
+  font-size: x-large;
   color: #FFFFFF; }
 
 .navbar {
