@@ -1,35 +1,35 @@
 (function(){
 
-	'use strict'; 
-	
+	'use strict';
+
 	var dependencies = [
-		'ghpg', 
+		'ghpg',
 		'ngRoute'
 
-	]; 	
+	];
 
 	angular.module('blogger', dependencies)
-	.config(Config);  
-	
-	Config.$inject = ['$locationProvider'] 
+	.config(Config);
+
+	Config.$inject = ['$locationProvider']
 
 	function Config($locationProvider){
 
-		$locationProvider.hashPrefix('!'); 
+		$locationProvider.hashPrefix('!');
 
-	} 
+	}
 
 	if (window.location.hash === '#_=_'){
-		window.location.hash = '#!'; 
+		window.location.hash = '#!';
 
-	} 
+	}
 
 
 	//bootstrap angular
-	
+
 	angular.element(document).ready(function(){
 
-		angular.bootstrap(document, ['ghpg']); 
+		angular.bootstrap(document, ['blogger']); 
 
 	});
 

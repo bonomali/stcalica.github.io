@@ -1,28 +1,35 @@
 (function(){
-	
+
 	'use strict';
 
 	angular.module('ghpg')
-	.config(Config); 
+	.config(Config);
 
 	Config.$inject = ['$routeProvider'];
 
 	function Config($routeProvider){
 
-		$routeProvider
-			.when('/listing', {
+		$routeProvider.when('/',{
+			templateUrl: '/angular/views/index.client.view.html',
+		}).when('/resume',{
+				templateUrl: '/angular/views/resume.client.view.html',
+				}).when('/listing', {
 				templateUrl: '/angular/views/listing.client.view.html'
-			}).otherwise({
-				redirectTo:'/'
-			}).when('/post/:title',{
-				templateUrl: '/angular/views/post.client.view.html',
+			}).when('/error',{
+				templateUrl: '/angular/views/error.client.view.html',
+				controller: 'postController',
+				controllerAs: 'post'
+			}).when('/post/:link',{
+				templateUrl: function($stateParams){
+								return "/angular/views/articles/"+ $stateParams.link + ".client.view.html";
+				},
 				controller: 'postController',
 				controllerAs: 'post'
 			}).otherwise({
-				redirectTo:'/listing'
+				redirectTo:'/error'
 			});
 
-	}  
+	}
 
 
 })();

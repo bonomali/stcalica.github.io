@@ -5,10 +5,10 @@ nav {
   color: white; }
 
 .nav-link {
-  color: white; }
+  color: #FFFFFF; }
 
 .navbar {
-  background: blue; }
+  background: #000000; }
 
 /* For all the scrollbars */
 ::-webkit-scrollbar {

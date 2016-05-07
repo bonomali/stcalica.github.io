@@ -1,16 +1,16 @@
-<div class="container-fluid" data-ng-Controller="listingController as vm"> 
-	<h2> Listings </h2> 	
+<div class="container-fluid" data-ng-Controller="listingController as vm">
+	<h2> Listings </h2>
 	<div class="row">
 		<div class="col-md-4"></div>
-		<div class="col-md-8"> 		
-			<div class="post-listing" data-ng-repeat="post in vm.articles"> 
-				<h3 class="article-title"><a target="_self" data-ng-href="/blog#/post/{{post.title}}"> {{ post.title  }} </a></h3>
+		<div class="col-md-8">
+			<div class="post-listing" data-ng-repeat="post in vm.articles">
+				<h3 class="article-title"><a data-ng-href="/#!/post/{{post.link}}"> {{ post.title  }} </a></h3>
 				<div class="article-container">
 					<div class="article-date"><span class="article-date">{{ post.date }}</span></div>
-					<div class="article-post>"><span class="article-content"> {{ post.content }} </span></div> 
-				</div> 
+					<div class="article-description>"><span class="article-content"> {{ post.description }} </span></div>
+				</div>
 			</div>
-		</div>  
-	</div>  
+		</div>
+	</div>
 
-</div> 
+</div>

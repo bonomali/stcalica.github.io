@@ -1,13 +1,18 @@
 {
 
 	"articles": [{
-		"title": "codeisdead",
-		"content": "it's dead!",
-		"date": "April 4 2016"
+		"link":"codeisdead",
+		"title": "Code is Dead!",
+		"date": "April 4 2016",
+		"tags": ["oped", "tech"],
+		"description":"An article reflecting my views on current tech and coding trends"
+
 	}, {
+		"link": "gitprimer",
 		"title": "Don't be a Git! Use Git!",
-		"content": "write this article",
-		"date": "March 5 2014"
+		"date": "March 5 2014",
+		"tags": ["tut", "primer", "git"],
+		"description":"An article reflecting my views on current tech and coding trends"
 	}]
 
 }

@@ -1,8 +1,8 @@
 (function(){
 
-	'use strict'; 
-	
-	var dependencies = [ 'ngRoute' ]; 	
+	'use strict';
+
+	var dependencies = [ 'ngRoute' ];
 
 	angular.module('ghpg', dependencies)
 	.run(init)
@@ -10,9 +10,9 @@
 
 
 	function init($rootScope, $location){
-		
-		var vm  = this; 		
 
-	} 
+		var vm  = this;
+
+	}
 
 })();
