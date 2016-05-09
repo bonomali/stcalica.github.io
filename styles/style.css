@@ -64,6 +64,9 @@ nav {
   font-family: oj;
   text-align: center; }
 
+.post-date {
+  text-align: center; }
+
 .post-content {
   text-align: justify; }
 

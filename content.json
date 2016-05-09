@@ -12,7 +12,19 @@
 		"title": "Don't be a Git! Use Git!",
 		"date": "March 5 2014",
 		"tags": ["tut", "primer", "git"],
-		"description":"An article reflecting my views on current tech and coding trends"
-	}]
+		"description":"I describe Git and how to get started with it so that you can collab more or save your project's history"
+	},{
+
+		"link":"dockerprimer",
+		"title":"Dock Your Projects",
+		"date" : "April 9 2016",
+		"tags" : [ "tut", "primer", "git"  ],
+		"description":"An article explaining Docker containers and how you can use them for many reasons."
+
+
+	}
+
+
+	]
 
 }
