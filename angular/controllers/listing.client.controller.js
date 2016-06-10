@@ -18,7 +18,6 @@
 
 		function grabData(){
 			return blogContent.getContent().then(function(data){
-					console.log(data);
 					vm.articles = data.articles;
 					return vm.articles;
 					},function(err){
