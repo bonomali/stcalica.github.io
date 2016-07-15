@@ -57,7 +57,7 @@
                               console.log("dsq", dsq);
                               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                           //    var body = angular.element(document).find("body");
-                          //    body.append(dsq);
+                          //    body.append(dsq);<script type="text/javascript" async src="//codeisdead.disqus.com/embed.js"></script>
                               console.log("DSQ is appended!");
 
                         };

@@ -4,19 +4,19 @@
 
 	var dependencies = [
 		'ghpg',
-		'ngRoute'
-
+		'ngRoute',
+		'ngDisqus'
 	];
 
 	angular.module('blogger', dependencies)
 	.config(Config);
 
-	Config.$inject = ['$locationProvider']
+	Config.$inject = ['$locationProvider', '$disqusProvider'];
 
 	function Config($locationProvider){
 
 		$locationProvider.hashPrefix('!');
-
+		$disqusProvider.setShortname('codeisdead'); 
 	}
 
 	if (window.location.hash === '#_=_'){
