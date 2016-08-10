@@ -13,7 +13,7 @@
 
 	Config.$inject = ['$locationProvider', '$disqusProvider'];
 
-	function Config($locationProvider){
+	function Config($locationProvider, $disqusProvider){
 
 		$locationProvider.hashPrefix('!');
 		$disqusProvider.setShortname('codeisdead'); 
