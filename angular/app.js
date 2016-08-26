@@ -5,7 +5,9 @@
 	var dependencies = [
 		'ghpg',
 		'ngRoute',
-		'ngDisqus'
+		'ngDisqus',
+		'angulartics',
+		'angulartics.google.analytics'
 	];
 
 	angular.module('blogger', dependencies)
