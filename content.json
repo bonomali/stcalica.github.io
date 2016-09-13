@@ -29,6 +29,14 @@
 		"tags":["tut", "primer", "irc"],
 		"description":"A very, very basic tutorial for those trying to get into IRC for the first time."
 	
+	},{
+		"link":"helloworld",
+		"title":"Hello World",
+		"date":"Septmember 14 2016",
+		"tags":["oped","tech"],
+		"description":"The reason behind my madness."
+
+
 	}
 
 
