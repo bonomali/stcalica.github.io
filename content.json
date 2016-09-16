@@ -16,23 +16,15 @@
 		"tags": ["oped", "tech"],
 		"description":"An article reflecting my views on current tech and coding trends"
 
-	},
-	{
+		},
+		{
 		"link": "gitgud",
 		"title": "Git Gud!",
 		"date": "Septmember 15 2016",
 		"tags": ["tut", "primer", "git"],
 		"description":"I describe how Git and Github can be useful for new programmers."
-	},
-	{
-		"link":"newbyirc",
-		"title":"IRC Newby Guide",
-		"date":"August 15 2016",
-		"tags":["tut", "primer", "irc"],
-		"description":"A very, very basic tutorial for those trying to get into IRC for the first time."
-
-	},
-	{
+		},
+		{
 
 		"link":"dockerprimer",
 		"title":"Dock Your Projects",
@@ -40,7 +32,7 @@
 		"tags" : [ "tut", "primer", "git"  ],
 		"description":"An article explaining Docker containers and how you can use them for many reasons."
 
-	}
+		}
 
 
 	]
