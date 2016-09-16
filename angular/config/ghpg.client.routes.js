@@ -11,8 +11,8 @@
 
 		$routeProvider.when('/',{
 			templateUrl: '/angular/views/index.client.view.html',
-		}).when('/resume',{
-				templateUrl: '/angular/views/resume.client.view.html',
+		}).when('/faq',{
+				templateUrl: '/angular/views/faq.client.view.html',
 				}).when('/listing', {
 				templateUrl: '/angular/views/listing.client.view.html'
 			}).when('/error',{
