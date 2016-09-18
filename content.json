@@ -25,6 +25,14 @@
 		"description":"I describe how Git and Github can be useful for new programmers."
 		},
 		{
+		"link": "riseofai",
+		"title": "Rise of the Machine Empire",
+		"date": "Septmember 17 2016",
+		"tags": ["oped","tech"],
+		"description":"Some thoughts on AI."
+
+		},
+		{
 
 		"link":"dockerprimer",
 		"title":"Dock Your Projects",
