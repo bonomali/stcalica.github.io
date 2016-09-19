@@ -19,6 +19,8 @@
 				templateUrl: '/angular/views/error.client.view.html',
 				controller: 'postController',
 				controllerAs: 'post'
+			}).when('/useful',{
+				templateUrl: '/angular/views/useful.client.view.html',
 			}).when('/post/:link',{
 				templateUrl: function($stateParams){
 								return "/angular/views/articles/"+ $stateParams.link + ".client.view.html";
