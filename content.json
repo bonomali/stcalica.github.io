@@ -30,18 +30,7 @@
 		"date": "Septmember 17 2016",
 		"tags": ["oped","tech"],
 		"description":"Some thoughts on AI."
-
-		},
-		{
-
-		"link":"dockerprimer",
-		"title":"Dock Your Projects",
-		"date" : "April 9 2016",
-		"tags" : [ "tut", "primer", "git"  ],
-		"description":"An article explaining Docker containers and how you can use them for many reasons."
-
 		}
-
 
 	]
 
