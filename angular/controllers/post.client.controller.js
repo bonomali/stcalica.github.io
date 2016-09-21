@@ -10,7 +10,9 @@
 
 
 	function postController($scope, $routeParams, $window){
-
+		$rootScope.$on('$stateChangeSuccess', function (event) {
+		$window.ga('send', 'pageview', $location.path());
+		});
 	}
 
 })();

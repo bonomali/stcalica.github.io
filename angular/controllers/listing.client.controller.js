@@ -12,6 +12,11 @@
 	////
 
 	function listingController($scope,  blogContent){
+		$rootScope.$on('$stateChangeSuccess', function (event) {
+		$window.ga('send', 'pageview', $location.path());
+		});
+
+
 		var vm = this;
 		vm.articles = [];
 		grabData();
