@@ -11,7 +11,7 @@
 
 	////
 
-	function listingController($scope, '$rootScope',  blogContent){
+	function listingController($scope, $rootScope,  blogContent){
 		$rootScope.$on('$stateChangeSuccess', function (event) {
 		$window.ga('send', 'pageview', $location.path());
 		});
