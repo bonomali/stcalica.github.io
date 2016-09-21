@@ -6,12 +6,12 @@
 	.module('ghpg')
 	.controller('listingController', listingController);
 
-	listingController.$inject = ['$scope', 'blogContent'];//,'blogContent'] //, 'blogContent'];
+	listingController.$inject = ['$scope', '$rootScope', 'blogContent'];//,'blogContent'] //, 'blogContent'];
 
 
 	////
 
-	function listingController($scope,  blogContent){
+	function listingController($scope, '$rootScope',  blogContent){
 		$rootScope.$on('$stateChangeSuccess', function (event) {
 		$window.ga('send', 'pageview', $location.path());
 		});
