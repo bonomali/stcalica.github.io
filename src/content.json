@@ -1,0 +1,37 @@
+{
+
+	"articles": [
+		{
+			"link":"helloworld",
+			"title":"Hello World",
+			"date":"April 4 2016",
+			"tags":["oped","tech"],
+			"description":"The reason behind my madness."
+
+		},
+		{
+		"link":"codeisdead",
+		"title": "Code is Dead!",
+		"date": "April 4 2016",
+		"tags": ["oped", "tech"],
+		"description":"An article reflecting my views on current tech and coding trends"
+
+		},
+		{
+		"link": "gitgud",
+		"title": "Git Gud!",
+		"date": "Septmember 15 2016",
+		"tags": ["tut", "primer", "git"],
+		"description":"I describe how Git and Github can be useful for new programmers."
+		},
+		{
+		"link": "riseofai",
+		"title": "Rise of the Machine Empire",
+		"date": "Septmember 17 2016",
+		"tags": ["oped","tech"],
+		"description":"Some thoughts on AI."
+		}
+
+	]
+
+}

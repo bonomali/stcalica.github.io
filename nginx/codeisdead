@@ -1,0 +1,7 @@
+server {
+      listen 80;
+      server_name codeisdead.com;
+      server_name www.codeisdead.com;
+      root /var/www/codeisdead;
+      index index.html index.htm;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "stcalica.github.io",
+  "description": "CodeIsDead Website",
+  "main": "index.js",
+  "authors": [
+    "Kyle Calica"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/stcalica/stcalica.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-disqus": "^1.1.0",
+    "angular": "^1.5.5",
+    "angulartics-google-analytics": "^0.2.1",
+    "angular-route": "^1.5.5",
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}
