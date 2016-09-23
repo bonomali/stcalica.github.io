@@ -13,6 +13,10 @@
 		$rootScope.$on('$stateChangeSuccess', function (event) {
 		$window.ga('send', 'pageview', $location.path());
 		});
+
+		//grab routeParams and then insert the title, date, author
+		//from author grab the approiate picture and insert 
+
 	}
 
 })();

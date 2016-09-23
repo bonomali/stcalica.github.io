@@ -1,62 +1,67 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
-		<span class="post-title">	<h2>Git Gud!</h2> </span>
-		<span>
-		<p>Stakes are high; code is due in a few hours. Everything was compiling, building, and running an hour ago until your teammates all merged files for the project. You are nervous and adjusting your seating every few seconds in pure anxiety. Your eyes are straining to look for that one changed line of code that broke everything and you are wishing you knew which teammate made a change to the code without telling anyone. If this sounds like a situation that you’ve had in a coding class then it sounds like you can benefit from a version management system.
+		<div class="col-md-2">
+			<img class="pro-pic" align="middle" src="/img/profile/lollipop.jpg" alt="Sorry, I'm looking beat today!">
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-8">
+			<span class="post-title">	<h2> Git Gud! </h2> </span>
+			<span class="post-date"><p><i>September 19th 2016</i></p></span>
+			<span class="post-author"><p><i>Kyle Calica</i></p></span>
+			<span class="post-content">
+			<p>Stakes are high; code is due in a few hours. Everything was compiling, building, and running an hour ago until your teammates all merged files for the project. You are nervous and adjusting your seating every few seconds in pure anxiety. Your eyes are straining to look for that one changed line of code that broke everything and you are wishing you knew which teammate made a change to the code without telling anyone. If this sounds like a situation that you’ve had in a coding class then it sounds like you can benefit from a version management system.
 
-		One of the first challenges people encounter when learning how to program is how to work as a group. In my time in college I’ve seen some crazy ways groups share and collaborate code. Dropboxes shared across multiple teammates, emailed source files, trading around of USB storage devices, shared google drive folders, and using the university’s public FTP server. Each one of these with it’s own large problems that can easily be solved by just learning a version management system.
-	</p>
-		<h3>What is a version management? </h3>
+			One of the first challenges people encounter when learning how to program is how to work as a group. In my time in college I’ve seen some crazy ways groups share and collaborate code. Dropboxes shared across multiple teammates, emailed source files, trading around of USB storage devices, shared google drive folders, and using the university’s public FTP server. Each one of these with it’s own large problems that can easily be solved by just learning a version management system.
+		</p>
+			<h3>What is a version management? </h3>
 
-		<p>Let’s start by breaking down the word version.</p>
+			<p>Let’s start by breaking down the word version.</p>
 
-		<p>Version<br>
-		<i>noun</i><br>
-		a particular form of something differing in certain respects from an earlier form or other forms of the same type of thing.</p>
+			<p>Version<br>
+			<i>noun</i><br>
+			a particular form of something differing in certain respects from an earlier form or other forms of the same type of thing.</p>
 
-		<p>Basically, something changed from the last time. If you look at the OS or most software of your computer there is usually a version number telling you how up to date or how many changes there have been to that piece of software. This is because a version management system is managing the changes to the code. Version management systems are an essential tool to a development team.
+			<p>Basically, something changed from the last time. If you look at the OS or most software of your computer there is usually a version number telling you how up to date or how many changes there have been to that piece of software. This is because a version management system is managing the changes to the code. Version management systems are an essential tool to a development team.
+			</p>
+
+			<h3>Why use a version management system?</h3>
+
+			<p>The majority of group projects I had in college always had that one team member who didn't want to use a version management system. Always stating that it was just complicating things and was just another thing to learn on top of everything else.
+
+			If your team is using a shared account or USB then who knows who made the last changes, and to what files. Google Drive may tell you some of the edits made or the teammate that added a file. But how do you track where the edits were, what edits were essential, or tag bugs. If one team member has changed a configuration file that signs him into your program using his credentials, everyone else has to remember to change their credentials each time they access the code. Not to mention it’s difficult for multiple people to work on it at the same time, and then having to come together for every change to discuss how to integrate it all together.
+
+			The problems that are seen across all these management options are not knowing who updated what files, if all files are present, if configurations have been changed, and not being able to go back to a working version or any version at all.
 		</p>
 
-		<h3>Why use a version management system?</h3>
+			<h3>Git</h3>
 
-		<p>The majority of group projects I had in college always had that one team member who didn't want to use a version management system. Always stating that it was just complicating things and was just another thing to learn on top of everything else.
+			<p>If we think of file sharing we obviously think of a server. This is exactly how a version management system starts out. A team will usually have a server that stores the entirety of the team’s code. This server is where people will share and update the copies. This server or storage of the code is usually called the repository, or repo for short.
 
-		If your team is using a shared account or USB then who knows who made the last changes, and to what files. Google Drive may tell you some of the edits made or the teammate that added a file. But how do you track where the edits were, what edits were essential, or tag bugs. If one team member has changed a configuration file that signs him into your program using his credentials, everyone else has to remember to change their credentials each time they access the code. Not to mention it’s difficult for multiple people to work on it at the same time, and then having to come together for every change to discuss how to integrate it all together.
+			To interface with this server there are usually tools in the terminal or a GUI that allow a programmer to pull copies from the repo, or push your changes to the repo. There are plenty of other features and tools that come with a version management system but those are the bare minimum basics.
 
-		The problems that are seen across all these management options are not knowing who updated what files, if all files are present, if configurations have been changed, and not being able to go back to a working version or any version at all.
-	</p>
+			Git is simple and easy to learn open source version management system. Git is comprised of the tools to interface with a Git repository server. Git was created by the creator of Linux to help him manage his code. Git is also good to start out with because you don’t even need to create nor manage your own server.
 
-		<h3>Git</h3>
+			Github is a company built around Git that provides a free server to store your team’s code. A lot of people get this confused. Github is a company that will store your code for your team on their servers for free and simply utilizes Git as a vehicle to do so. Git is a free open source tool that existed prior to Github. Before Github, if you wanted to use git then you would have to set up and manage your own server to manage changes and collaboratively code.
 
-		<p>If we think of file sharing we obviously think of a server. This is exactly how a version management system starts out. A team will usually have a server that stores the entirety of the team’s code. This server is where people will share and update the copies. This server or storage of the code is usually called the repository, or repo for short.
+			Github is nice because you don’t have to learn how to set up and store a server if all you want to do is code with friends. Github also creates user profile accounts that are viewable display coding statistics and your personal or collaborative repos.
+		</p>
+			<h3>Why Use Github?</h3>
 
-		To interface with this server there are usually tools in the terminal or a GUI that allow a programmer to pull copies from the repo, or push your changes to the repo. There are plenty of other features and tools that come with a version management system but those are the bare minimum basics.
+			<p>There are a few reasons why using Github is great for programmers who don’t mind their projects being open to the public. First, a lot of first time programmers wouldn’t know where to even start when creating their own repository and that may  bog down a lot of your time if you have to quickly work on a project. Second, collaborating with a group becomes very easy with many of the features that Github has on their website. Third, your user profile and user statistics are quite handy for potential employers to assess your dedication and experience.
 
-		Git is simple and easy to learn open source version management system. Git is comprised of the tools to interface with a Git repository server. Git was created by the creator of Linux to help him manage his code. Git is also good to start out with because you don’t even need to create nor manage your own server.
+			If you want to show a potential employer what you know and how often you code then you can show them your Github profile. Your Github public profile will list your projects and can show, on a certain project, how much you contributed compared to the other collaborators. It also allows you to create tasks on a project and assign them to collaborators.
+		</p>
+	</span>
 
-		Github is a company built around Git that provides a free server to store your team’s code. A lot of people get this confused. Github is a company that will store your code for your team on their servers for free and simply utilizes Git as a vehicle to do so. Git is a free open source tool that existed prior to Github. Before Github, if you wanted to use git then you would have to set up and manage your own server to manage changes and collaboratively code.
-
-		Github is nice because you don’t have to learn how to set up and store a server if all you want to do is code with friends. Github also creates user profile accounts that are viewable display coding statistics and your personal or collaborative repos.
-	</p>
-		<h3>Why Use Github?</h3>
-
-		<p>There are a few reasons why using Github is great for programmers who don’t mind their projects being open to the public. First, a lot of first time programmers wouldn’t know where to even start when creating their own repository and that may  bog down a lot of your time if you have to quickly work on a project. Second, collaborating with a group becomes very easy with many of the features that Github has on their website. Third, your user profile and user statistics are quite handy for potential employers to assess your dedication and experience.
-
-		If you want to show a potential employer what you know and how often you code then you can show them your Github profile. Your Github public profile will list your projects and can show, on a certain project, how much you contributed compared to the other collaborators. It also allows you to create tasks on a project and assign them to collaborators.
-	</p>
-</span>
-
-			<p> In my next article I'll actually explain how to use Git </p>
+				<p> In my next article I'll actually explain how to use Git </p>
 
 
 
-
+			</div>
 
 
 
 
 		</div>
-	</div>
 	<div disqus="3"></div>
 </div>
