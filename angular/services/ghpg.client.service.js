@@ -14,12 +14,9 @@
 		var viewing;
 
 		var factory = {
-
-			getContent : getContent
+			getContent:getContent,
+			getArticle:getArticle
 		};
-
-		return factory;
-
 
 		////
 
@@ -33,5 +30,25 @@
 
 		}
 
+		function getArticle(title) {
+			return $http.get('/content.json').then(function(res){
+			 var data = res.data.articles;
+			for(var i = 0; i < data.length; i++ ){
+						if(title == data[i].link){
+							//console.log(data[i]);
+							return data[i];
+						}
+				}
+				return null;
+
+			}).catch(function(err){
+				console.log(err);
+			});
+
 		}
+
+		return factory;
+
+		}
+
 })();

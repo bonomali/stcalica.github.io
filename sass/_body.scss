@@ -26,6 +26,8 @@
     background-color: #b3b3b3;
 }
 
+
+
 .pro-pic{
       width:200px;
       border-radius: 100px;
@@ -35,6 +37,17 @@
       display:block;
 
 }
+
+.author-pic{
+      width:150px;
+      border-radius: 100px;
+      margin-bottom: 3em;
+      margin-left:10px;
+      margin-right:auto;
+      display:block;
+
+}
+
 
 
 .site-header{
@@ -58,6 +71,10 @@
     text-align: center;
 
 
+}
+
+.post-author{
+    text-align: center;
 }
 
 .post-date{

@@ -1,136 +1,100 @@
 @font-face {
   font-family: oj;
-  src: url(/styles/fonts/oj.otf);
-}
-
+  src: url(/styles/fonts/oj.otf); }
 @font-face {
   font-family: myway;
-  src: url(/styles/fonts/IDidItMyWay.ttf);
-}
-
+  src: url(/styles/fonts/IDidItMyWay.ttf); }
 @font-face {
   font-family: trashbox;
-  src: url(/styles/fonts/Trashbox.ttf);
-}
-
-/* line 1, ../sass/_nav.scss */
+  src: url(/styles/fonts/Trashbox.ttf); }
 nav {
-  margin-bottom: 55px;
-}
+  margin-bottom: 55px; }
 
-/* line 7, ../sass/_nav.scss */
 .navbar-brand {
-  font-family: myway;
-}
-/* line 9, ../sass/_nav.scss */
-.navbar-brand img {
-  color: white;
-}
+  font-family: myway; }
+  .navbar-brand img {
+    color: white; }
 
-/* line 14, ../sass/_nav.scss */
 .nav-link {
   font-family: trashbox;
   font-size: x-large;
-  color: white;
-}
+  color: #FFFFFF; }
 
-/* line 20, ../sass/_nav.scss */
 .navbar {
-  background: black;
-}
+  background: #000000; }
 
 /* For all the scrollbars */
-/* line 2, ../sass/_body.scss */
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #F5F5F5;
-}
+  background-color: #F5F5F5; }
 
-/* line 8, ../sass/_body.scss */
 ::-webkit-scrollbar-thumb {
   width: 8px;
-  background-image: -webkit-linear-gradient(whitesmoke, #8a8a8a);
-}
+  background-image: -webkit-linear-gradient(#F5F5F5, #8A8A8A); }
 
-/* line 13, ../sass/_body.scss */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border: 1px solid black;
-  background-color: #F5F5F5;
-}
+  background-color: #F5F5F5; }
 
-/* line 20, ../sass/_body.scss */
 ::-webkit-scrollbar-button {
-  background-color: #7c2929;
-}
+  background-color: #7c2929; }
 
-/* line 25, ../sass/_body.scss */
 ::-webkit-scrollbar-corner {
-  background-color: #b3b3b3;
-}
+  background-color: #b3b3b3; }
 
-/* line 29, ../sass/_body.scss */
 .pro-pic {
   width: 200px;
   border-radius: 100px;
   margin-bottom: 3em;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-}
+  display: block; }
 
-/* line 40, ../sass/_body.scss */
+.author-pic {
+  width: 150px;
+  border-radius: 100px;
+  margin-bottom: 3em;
+  margin-left: 10px;
+  position:absolute;
+  left:0;}
+
 .site-header {
   font-family: 28dayslater;
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
-/* line 48, ../sass/_body.scss */
 .site-snip {
   margin-top: 3em;
   font-family: trashbox;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 55, ../sass/_body.scss */
 .post-title {
   font-family: oj;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 63, ../sass/_body.scss */
 .post-date {
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 68, ../sass/_body.scss */
 .post-content {
-  text-align: justify;
-}
+  text-align: justify; }
 
-/* line 1, ../sass/_articles.scss */
 .post-listing {
   margin: 35px;
-  padding: 15px;
-}
+  padding: 15px; }
 
-/* line 9, ../sass/_articles.scss */
 .article-content {
   text-align: justified;
   height: 500em;
-  overflow: ellipsis;
-}
+  overflow: ellipsis; }
 
-/* line 18, ../sass/_articles.scss */
 .article-title {
   font-family: trashbox;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 23, ../sass/_articles.scss */
 .article-date {
   font-family: myway;
   text-align: center;
   font-size: .95em;
-  font-style: italic;
-}
+  font-style: italic; }
+
+/*# sourceMappingURL=main.css.map */

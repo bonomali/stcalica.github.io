@@ -51,6 +51,14 @@ nav {
   margin-right: auto;
   display: block; }
 
+.author-pic {
+  width: 150px;
+  border-radius: 100px;
+  margin-bottom: 3em;
+  margin-left: 10px;
+  margin-right: auto;
+  display: block; }
+
 .site-header {
   font-family: 28dayslater;
   margin-bottom: 2em; }
@@ -62,6 +70,9 @@ nav {
 
 .post-title {
   font-family: oj;
+  text-align: center; }
+
+.post-author {
   text-align: center; }
 
 .post-date {
