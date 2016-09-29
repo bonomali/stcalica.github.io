@@ -15,9 +15,8 @@
 		});
 		var vm = this;
 		var tagline  = $routeParams.link;
-		console.log(tagline);
 		grabArticle(tagline);
-		
+	
 
 
 		function grabArticle(tagline){
