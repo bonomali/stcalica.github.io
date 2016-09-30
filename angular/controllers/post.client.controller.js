@@ -15,10 +15,12 @@
 		});
 		var vm = this;
 		var tagline  = $routeParams.link;
-		console.log(tagline);
 		grabArticle(tagline);
-		
-
+		if(vm.author != "Kyle" || vm.author != "Phillip"){
+			console.log("no author");
+			//add second line and add both authors 
+		}
+			
 
 		function grabArticle(tagline){
 			return blogContent.getArticle(tagline).then(function(article){
