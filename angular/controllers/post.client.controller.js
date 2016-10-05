@@ -18,9 +18,9 @@
 		grabArticle(tagline);
 		if(vm.author != "Kyle" || vm.author != "Phillip"){
 			console.log("no author");
-			//add second line and add both authors 
+			//add second line and add both authors
 		}
-			
+
 
 		function grabArticle(tagline){
 			return blogContent.getArticle(tagline).then(function(article){
@@ -32,9 +32,6 @@
 				console.log(err);
 				});
 		}
-
-
-
 
 
 		//grab routeParams and then insert the title, date, author

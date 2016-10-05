@@ -18,7 +18,7 @@
 	function Config($locationProvider, $disqusProvider){
 
 		$locationProvider.hashPrefix('!');
-		$disqusProvider.setShortname('codeisdead'); 
+		$disqusProvider.setShortname('codeisdead');
 	}
 
 	if (window.location.hash === '#_=_'){
