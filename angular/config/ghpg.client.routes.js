@@ -21,6 +21,8 @@
 				controllerAs: 'post'
 			}).when('/useful',{
 				templateUrl: '/angular/views/useful.client.view.html',
+			}).when('/hire',{
+				templateUrl: '/angular/views/hire.client.view.html',
 			}).when('/post/:link',{
 				templateUrl: function($stateParams){
 								return "/angular/views/articles/"+ $stateParams.link + ".client.view.html";

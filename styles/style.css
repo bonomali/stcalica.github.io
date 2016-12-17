@@ -8,20 +8,26 @@
   font-family: trashbox;
   src: url(/styles/fonts/Trashbox.ttf); }
 nav {
-  margin-bottom: 55px; }
+  margin-bottom: 100px; }
+
+.nav-text {
+  color: #FFFFFF !important; }
 
 .navbar-brand {
-  font-family: myway; }
-  .navbar-brand img {
-    color: white; }
+  font-family: myway;
+  font-size: 30px;
+  color: #FFFFFF; }
 
 .nav-link {
   font-family: trashbox;
   font-size: x-large;
   color: #FFFFFF; }
+  .nav-link .nav-text {
+    color: #FFFFFF; }
 
 .navbar {
-  background: #000000; }
+  background: #000000;
+  border-radius: .25rem; }
 
 /* For all the scrollbars */
 ::-webkit-scrollbar {
@@ -42,6 +48,12 @@ nav {
 
 ::-webkit-scrollbar-corner {
   background-color: #b3b3b3; }
+
+body {
+  padding-top: 65px; }
+
+.empty-space {
+  width: 25px; }
 
 .pro-pic {
   width: 200px;
@@ -108,5 +120,9 @@ nav {
   text-align: center;
   font-size: .95em;
   font-style: italic; }
+
+.article-list-item {
+  list-style-position: inside;
+  margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */
