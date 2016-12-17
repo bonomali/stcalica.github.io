@@ -1,25 +1,30 @@
 nav{
 
-	margin-bottom:55px;
+	margin-bottom:100px;
+}
 
+.nav-text{
+	color:$white !important;
 }
 
 .navbar-brand{
 	font-family:myway;
-	img {
-		color:white;
-	}
+	font-size: 30px;
+	color:$white;
 }
 
 .nav-link{
 	font-family: trashbox;
 	font-size: x-large;
 	color: $white;
+	.nav-text{
+		color:$white;
+	}
 
 }
 .navbar{
 
 	background: $black;
-
+	border-radius: .25rem;
 
 }

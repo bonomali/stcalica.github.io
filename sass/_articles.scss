@@ -21,10 +21,16 @@
 }
 
 .article-date{
-	
+
 	font-family:myway;
 	text-align:center;
   font-size: .95em;
   font-style: italic;
+
+}
+
+.article-list-item{
+	list-style-position:inside;
+	margin: 5px;
 
 }
