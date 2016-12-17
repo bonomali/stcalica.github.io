@@ -2,19 +2,13 @@
 <html>
 	<head>
 		<title> Code Is Dead!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Code is Dead! This blog describes how to stay up-to-date in the tech world and still be a rebel. Great tutorials for newbs who want to learn how, why and what came before. Feel free to give me feedback and challenge anything I say. Conflict makes character :)">
 		<meta property="fb:pages" content="1829747260605102" />
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<meta name="distribution" content="web">
 		<meta name="author" content="Kyle Calica">
 		<meta name="keywords" content="web, tutorials, tech, technology, blog, personal blog, resume, engineer, software, hack, hacker">
-		
-		<!--
-		need these to be dynamically loaded - probably time to get off github?
-		<meta property="og:title"              content="{{post.title}}" />
-		<meta property="og:description"        content="{{post.description}}}" />
-		-->
-
 		<link rel="stylesheet" href="/js/lib/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="/styles/style.css" />
 		<link rel='shortcut icon' href='/img/deadhappy.png' type='image/x-icon'/ >
@@ -33,22 +27,29 @@
 		<!-- credit for favicon "Dead Happy by Esteban Gramajo from the Noun Project" -->
 	</head>
 	<body>
-		<nav class="navbar navbar-default" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			 <div class="navbar-header">
-				<a class="navbar-brand" href="#!/">
-				<h1> Code Is Dead! </h1>
-				<ul class="nav navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="#!/listing">Blog</a></li>
-					<li class="nav-item"><a class="nav-link" href="#!/faq">FAQ</a></li>
-					<li class="nav-item"><a class="nav-link" href="#!/useful">Useful Links</a></li>
+			       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsible" aria-expanded="false">
+			         <span class="sr-only">Toggle navigation</span>
+			         <span class="icon-bar"></span>
+			         <span class="icon-bar"></span>
+			         <span class="icon-bar"></span>
+			       </button>
+						 <a class="navbar-brand nav-text navbar-brand" href="#!/">Code Is Dead!</a>
+			     </div>
+
+				<ul class="nav navbar-nav navbar-collapse collapse" id="collapsible">
+					<li class="nav-item nav-text"><a class="nav-link nav-text" href="#!/listing">Blog</a></li>
+					<li class="nav-item nav-text"><a class="nav-link nav-text" href="#!/faq">FAQ</a></li>
+					<li class="nav-item nav-text"><a class="nav-link nav-text" href="#!/useful">Useful Links</a></li>
+					<li class="nav-item nav-text"><a class="nav-link nav-text" href="#!/hire">Hire Us</a></li>
 				</ul>
-			</div>
 		</nav>
 		<div class="container">
 			<section data-ng-view></section>
 		</div>
 	</body>
-	<script type="text/javascript" src="/js/lib/jquery/dist/jquery.min.js">
+	<script type="text/javascript" src="/js/lib/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
