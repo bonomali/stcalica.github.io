@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-2 col-sm-12 col-xs-12">
 			<img class="author-pic" align="middle" src="/img/profile/{{post.author}}.jpg" alt="Sorry, I'm looking beat today!">
-			<img class="article-pic margin-top-300" align="middle" src="/img/comic/xkcd-git-commands.jpg" alt="Very funny git comic">
+			<img class="article-pic margin-top-300" width="250px" height="300px" align="middle" src="/img/xkcdgitremember.png" alt="Very funny git comic">
 		</div>
 		<div class="col-md-1"></div>
 		<div class="col-md-8 col-sm-12 col-xs-12">
@@ -11,13 +11,82 @@
 			<span class="post-author"><p><i>{{post.author}}</i></p></span>
 			<span class="post-content">
 
+				<h3>A Simple Understanding of Git</h3>
+
+					<p>First, understand that client side means your local computer. The computer that is physically in front of you. Also understand that a Git server is a remote computer, a computer that is somewhere else that you talk to with your local computer. Secondly, understand that Git is an open source software development tool available to everyone and that Github is a company that hosts the Git server so your team doesn’t have to set up and manage an extra server.
+
+					Git works by housing all of a team’s code on a server that is accessible to everyone on the team. The server holds the master code copy which the team can then push their changes and pull other changes into. Github will provide this to your team for free but it will be available publicly.
+
+					On the client side or the local computer, for the team member that is writing code, the Git software holds a copy of the original source code that is editable. A programmer such as yourself will make edits to this local copy and then have Git track these changes.
+
+					The changes to the code go into a staging area that resides in the client end (your local computer). Each change that you want to be committed is called a commit. Each commit is indexed by a commit hash. You can actually revert between commits and revert changes to your local editable copy.
+
+					When someone wants to make big changes they make a copy of the master code and branch off to do their changes then merge back when they are finished.</p>
+
+				<h3>Creating a repository</h3>
+
+					<p>A code repository is simply a place to hold your source code and other important files that need to be shared amongst your team. Thinking about how the Git infrastructure works we will need to set up a repository on the Git server and then set up the client to be able to talk to this server. Since we are using Github we will have to use the site to create the repository. This is easy and can all be done through the web UI. Once that is done it will give you options that I will go over now.</p>
+
+					<p class="code">git init</p>
+
+						<p>This will initialize the current directory into a git directory which will be bootstrapped with .git
+
+						Git will look over this directory to changes matched against the client’s staging area.
+
+						Next we have to give the URL of the Git server, in the Github case we have to give it the URL to the Github repository.</p>
+
+					<p class="code">git remote add `repo_name` `server_url`</p>
+
+					<p>This command will tell the local client where to pull and push changes from and also give it a convenient name.</p>
+
+				<h3>Cloning a repository</h3>
+
+					<p>In a work situation more than likely you’ll be asked to clone a project’s source code and make changes to it.</p>
+
+				<h3>Making a Change, Committing Code</h3>
+
+					<p>Now what to do when you actually make a change? Commit the change to the staging area.</p>
+
+					<p class="code">git commit -am “commit message”</p>
+
+					<p>Here we tell git to commit our changes to the staging area. The changes are not in master and are not shared, but you can think of this as a saved checkpoint for yourself. This will give you a commit ID for the changes and log a message about what you have changed.</p>
+
+				<h3>Sharing Code, Pushing Code</h3>
+
+					<p>Now that we actually have some changes stored in our staging area we can now share them with the rest of the team.</p>
+
+					<p class="code">git push origin master </p>
+
+					<p>This will now push all the commits from your staging area and merge them with the server’s main code repository. Origin is a variable in the git configs that holds which server code repository holds the code. Master is what we call the main branch we will talk about this later in a separate article.</p>
+
+
+				<h3>Getting the team’s changes, Pulling Code</h3>
+
+					<p>Teammates have made some changes and now you probably want to sync it with your local copy.</p>
+
+					<p class="code">git pull origin master</p>
+
+					<p>This will pull and merge all changes with your local branch. Just like last time, you can see we are asking to pull from the origin server the master branch.</p>
+
+				<h3>Checking Status</h3>
+
+					<p>Now sometimes we cannot remember where we did some changes or if we added some files. The easiest way to check changes that have not been committed is using the git status command.</p>
+
+					<p class="code">git status</p>
+
+
+				<h3>Checking Changes</h3>
+
+					<p>Sometimes we’d like to know who made a change or when the last change was. This can be told from the log command. Now think of the log getting pulled from the origin server every time we pull. So we only have the log from the last pull. Each commit message and commit ID is shown here. We can rollback changes from using these commit IDs.</p>
+
+				<p class="code">git log</p>
+
+<p>Wait for my next article where I talk about working on multiple files between each other. I’ll be talking about branching, conflict resolution, and rolling back local changes.</p>
+
+
+
 			</span>
-
-				<p> </p>
-
-
-
-			</div>
+		</div>
 
 
 
