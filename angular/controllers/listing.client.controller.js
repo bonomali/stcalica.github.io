@@ -42,16 +42,13 @@
 		console.log("Pages before loading articles", vm.page);
 		$scope.$watch('vm.page.cur', function(next, last){
 
-			console.log('next', next);
-			console.log('last', last);
-
 			console.log('vm.page.cur before', vm.page.cur);
 			console.log('vm.page.start before', vm.page.start);
 			console.log('vm.page.end before', vm.page.end);
 
 
 
-			vm.page.start =  ((vm.page.cur) * vm.page.pageSize)  || 0; //start index of total number of articles
+			vm.page.start =  ((vm.page.cur - 1) * vm.page.pageSize)  || 0; //start index of total number of articles
 			vm.page.end = Math.ceil(vm.page.start + vm.page.pageSize - 1, vm.page.totalArticles - 1) || 0; //end index of total number of articles
 
 			console.log('vm.page.cur after', vm.page.cur);
@@ -88,12 +85,11 @@
 					      //       }
 					      //   }
 
+					 vm.page.bottom = vm.page.totalPages;
+					// vm.page.start =  ((vm.page.cur) * vm.page.pageSize) || 0;
+					// vm.page.end = Math.ceil(vm.page.start + vm.page.pageSize - 1, vm.page.totalArticles - 1);
 
-					vm.page.bottom = vm.page.totalPages;
-					vm.page.start =  ((vm.page.cur - 1) * vm.page.pageSize) || 0;
-					vm.page.end = Math.ceil(vm.page.start + vm.page.pageSize - 1, vm.page.totalArticles - 1);
-
-
+					console.log(vm.articles);
 
 
 

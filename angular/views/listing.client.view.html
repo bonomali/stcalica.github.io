@@ -3,7 +3,7 @@
 	<!-- ng-repeat these divs for each listing based on those in the index  -->
 	<div class="row">
 		<div class="col-md-8 col-xs-12 col-sm-12">
-			<div class="post-listing" data-ng-repeat="post in vm.articles.slice(vm.page.start, vm.page.end)">
+			<div class="post-listing" data-ng-repeat="post in vm.articles.slice(vm.page.start, vm.page.end+1)">
 				<h3 class="article-title"><a data-ng-href="/#!/post/{{post.link}}"> {{ post.title  }} </a></h3>
 				<div class="article-container">
 					<div class="article-date"><span class="article-date">{{ post.date }}</span></div>
@@ -20,15 +20,15 @@
 			  <ul class="pagination">
 			    <li>
 						<!-- will need to able or disable depending if at first page or not -->
-			      <button class="page-button" aria-label="Previous"  ng-disabled="vm.page.cur <= 0" ng-click="vm.page.cur=vm.page.cur-1">
+			      <button class="page-button" aria-label="Previous"  ng-disabled="vm.page.cur <= 1" ng-click="vm.page.cur=vm.page.cur-1">
 			        <span aria-hidden="true">&laquo;</span>
 			      </button>
 						<!-- use ng-repeat starting and ending with the top and end page -->
 			    </li>
-			    <li ng-repeat="pg in vm.range(vm.page.totalPages) track by $index" ng-click="vm.page.cur=$index"><a class="page-link">{{$index+1}}</a></li>
+			    <li ng-repeat="pg in vm.range(vm.page.totalPages) track by $index" ng-click="vm.page.cur=$index+1"><a class="page-link">{{$index+1}}</a></li>
 			    <li>
 						<!-- will need to able or disable depending if at last page or not -->
-			      <button class="page-button"  aria-label="Next"  ng-disabled="vm.page.cur >= vm.page.totalPages - 1" ng-click="vm.page.cur=vm.page.cur+1">
+			      <button class="page-button"  aria-label="Next"  ng-disabled="vm.page.cur >= vm.page.totalPages" ng-click="vm.page.cur=vm.page.cur+1">
 			        <span aria-hidden="true">&raquo;</span>
 			      </button>
 			    </li>
