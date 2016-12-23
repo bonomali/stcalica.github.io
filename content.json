@@ -41,9 +41,7 @@
 		"date": "October 9 2016",
 		"tags": ["tut", "primer", "git"],
 		"description":"Some basics of Git and Github to help you and your team get started with version control."
-		}
-
-
+	}
 	]
 
 }
