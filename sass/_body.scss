@@ -26,6 +26,22 @@
     background-color: #b3b3b3;
 }
 
+.caption{
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+}
+
+.article-embed-right{
+  margin: 25px;
+  float:right;
+}
+
+.mid-article-pic{
+    width: 300px;
+    height: 250px;
+
+}
 
 
 
@@ -46,6 +62,9 @@ body {
     border: 1px solid #ddd;
 }
 
+.float-right{
+  float:right;
+}
 
 .empty-space{
   width:25px;
@@ -85,8 +104,12 @@ body {
 
 }
 
+
 .margin-top-300{
 	margin-top:300px;
+  @media screen and (max-width: 360px){
+    display: none;
+  }
 }
 
 
@@ -125,5 +148,5 @@ body {
 .post-content{
 
   text-align: justify;
-
+  line-height: 2;
 }
