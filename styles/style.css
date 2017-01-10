@@ -130,7 +130,8 @@ body {
   text-align: center; }
 
 .post-content {
-  text-align: justify; }
+  text-align: justify;
+  line-height: 2; }
 
 .post-listing {
   margin: 35px;

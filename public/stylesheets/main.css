@@ -8,23 +8,26 @@
   font-family: trashbox;
   src: url(/styles/fonts/Trashbox.ttf); }
 nav {
-  margin-bottom: 55px; }
+  margin-bottom: 100px; }
 
 .nav-text {
-  color: white; }
+  color: #FFFFFF !important; }
 
 .navbar-brand {
-  font-family: myway; }
-  .navbar-brand img {
-    color: white; }
+  font-family: myway;
+  font-size: 30px;
+  color: #FFFFFF; }
 
 .nav-link {
   font-family: trashbox;
   font-size: x-large;
   color: #FFFFFF; }
+  .nav-link .nav-text {
+    color: #FFFFFF; }
 
 .navbar {
-  background: #000000; }
+  background: #000000;
+  border-radius: .25rem; }
 
 /* For all the scrollbars */
 ::-webkit-scrollbar {
@@ -46,8 +49,38 @@ nav {
 ::-webkit-scrollbar-corner {
   background-color: #b3b3b3; }
 
-.divider {
-  margin: 15px; }
+.caption {
+  text-align: center;
+  font-style: italic;
+  font-size: small; }
+
+.article-embed-right {
+  margin: 25px;
+  float: right; }
+
+.mid-article-pic {
+  width: 300px;
+  height: 250px; }
+
+body {
+  padding-top: 65px; }
+
+.page-button {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd; }
+
+.float-right {
+  float: right; }
+
+.empty-space {
+  width: 25px; }
 
 .pro-pic {
   width: 200px;
@@ -73,6 +106,9 @@ nav {
 
 .margin-top-300 {
   margin-top: 300px; }
+  @media screen and (max-width: 360px) {
+    .margin-top-300 {
+      display: none; } }
 
 .site-header {
   font-family: 28dayslater;
@@ -94,7 +130,8 @@ nav {
   text-align: center; }
 
 .post-content {
-  text-align: justify; }
+  text-align: justify;
+  line-height: 2; }
 
 .post-listing {
   margin: 35px;
@@ -114,5 +151,12 @@ nav {
   text-align: center;
   font-size: .95em;
   font-style: italic; }
+
+.article-list-item {
+  list-style-position: inside;
+  margin: 5px; }
+
+.code {
+  font-style: oblique; }
 
 /*# sourceMappingURL=main.css.map */
