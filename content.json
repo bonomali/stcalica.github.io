@@ -49,6 +49,14 @@
 	"date": "December 24 2016",
 	"tags": ["oped"],
 	"description":"A look into what defines a programmer from the perspective of someone just getting started."
+	},
+	{
+	"link": "uptheskillstack",
+	"title": "Guide to Up Your Code and Communication Skills on StackOverflow",
+	"author":"Kyle",
+	"date": "Feburary 14th 2017",
+	"tags": ["oped", "tut"],
+	"description":"A guide on my personal method of using StackOverflow to improve my code and communication skills."
 	}
 	]
 
