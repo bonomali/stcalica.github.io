@@ -16,7 +16,6 @@
 		"date": "April 4 2016",
 		"tags": ["oped", "tech"],
 		"description":"An article reflecting my views on current tech and coding trends"
-
 		},
 		{
 		"link": "gitgud",
@@ -27,28 +26,12 @@
 		"description":"I describe how Git and Github can be useful for new programmers."
 		},
 		{
-		"link": "riseofai",
-		"title": "Rise of the Machine Empire",
-		"author":"Phillip",
-		"date": "Septmember 17 2016",
-		"tags": ["oped","tech"],
-		"description":"Some thoughts on AI."
-		},
-		{
 		"link": "git-part-1",
 		"title": "Don't be a Git! Use Git!",
 		"author":"Kyle",
 		"date": "October 9 2016",
 		"tags": ["tut", "primer", "git"],
 		"description":"Some basics of Git and Github to help you and your team get started with version control."
-	},
-	{
-	"link": "surprised",
-	"title": "You'd Be Surprised",
-	"author":"Phillip",
-	"date": "December 24 2016",
-	"tags": ["oped"],
-	"description":"A look into what defines a programmer from the perspective of someone just getting started."
 	},
 	{
 	"link": "uptheskillstack",

@@ -16,7 +16,7 @@
 		var vm = this;
 		var tagline  = $routeParams.link;
 		grabArticle(tagline);
-		if(vm.author != "Kyle" || vm.author != "Phillip"){
+		if(vm.author != "Kyle"){
 			console.log("no author");
 			//add second line and add both authors
 		}
