@@ -40,6 +40,14 @@
 	"date": "Feburary 14th 2017",
 	"tags": ["oped", "tut"],
 	"description":"A guide on my personal method of using StackOverflow to improve my code and communication skills by mostly answering my own questions. In this guide I explain how StackOverflow has improved my skills by expanding the way I vocalize my problems."
+	},
+	{
+	"link": "bitofbitcoin",
+	"title": "A Bit of Bitcoin",
+	"author":"Kyle",
+	"date": "December 12th 2017",
+	"tags": ["oped", "tut"],
+	"description":"Answers to your Bitcoin questions"
 	}
 	]
 
