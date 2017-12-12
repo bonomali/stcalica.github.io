@@ -4,11 +4,13 @@ MAINTAINER Kyle Calica "Kyle Calica"
 
 #for nodejs
 RUN apt-get update
-RUN apt-get install -y build-essential git
+RUN apt-get install -y build-essential git curl
 
 #install npm and bower
-RUN apt-get install -y nodejs-legacy
-RUN apt-get install -y npm
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN apt-get install -y nodejs
+#RUN apt-get install -y nodejs
+#RUN apt-get install -y npm
 RUN npm install -g bower
 
 
