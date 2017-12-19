@@ -48,6 +48,14 @@
 	"date": "December 12th 2017",
 	"tags": ["oped", "tut"],
 	"description":"Answers to your Bitcoin questions"
+	},
+	{
+	"link": "gettingcoin",
+	"title": "Getting Coin",
+	"author":"Kyle",
+	"date": "December 18th 2017",
+	"tags": ["oped", "tut"],
+	"description":"Learn how to get altcoins on Bittrex with funds from Coinbase"
 	}
 	]
 
